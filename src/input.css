@@ -19,7 +19,7 @@
 }
 
 .container {
-    @apply w-full max-w-80 grid grid-cols-1 gap-8 my-20 min-desktop:max-w-[70rem] min-desktop:grid-cols-4 lg:max-w-[50rem] lg:grid-cols-2;
+    @apply w-full max-w-80 grid grid-cols-1 gap-8 py-20 min-desktop:max-w-[70rem] min-desktop:grid-cols-4 lg:max-w-[50rem] lg:grid-cols-2;
 }
 
 .card {
