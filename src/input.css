@@ -14,4 +14,31 @@
 --grey-500: hsl(217, 19%, 35%);
 --darkblue: hsl(219, 29%, 14%);
 --black: hsl(0, 0%, 7%);
+
+--shadow-3xl: 40px 40px 70px rgba(0, 0, 0, 0.25);
+}
+
+.container {
+    @apply w-full max-w-80 grid grid-cols-1 gap-8 my-20 min-desktop:max-w-[70rem] min-desktop:grid-cols-4 lg:max-w-[50rem] lg:grid-cols-2;
+}
+
+.card {
+    @apply rounded-xl flex flex-col gap-3 py-8 pl-8 pr-12 justify-center shadow-2xl min-desktop:p-8 min-desktop:shadow-3xl;
+}
+
+.card .author {
+    @apply grid grid-cols-[2rem_auto] gap-x-3 text-[0.703125rem] items-center;
+}
+.author__picture {
+    @apply rounded-[50%] border-2 row-span-2 max-h-full;
+}
+.author__name {
+    @apply text-[0.796875rem] font-semibold;
+}
+
+.content__subject {
+    @apply font-semibold text-xl mb-4 leading-[1.25]; 
+}
+.content__body {
+    @apply text-[0.8125rem] pr-1 leading-[1.5];
 }
